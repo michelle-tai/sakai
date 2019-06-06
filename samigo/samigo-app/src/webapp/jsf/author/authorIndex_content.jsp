@@ -519,7 +519,7 @@
                             <h:outputText value="#{authorFrontDoorMessages.selected_group} " rendered="#{assessment.releaseTo eq 'Selected Groups' and assessment.groupCount eq 1}"/>
                             <h:outputText value="#{authorFrontDoorMessages.no_selected_groups_error}" rendered="#{assessment.releaseTo eq 'Selected Groups' and assessment.groupCount eq 0}"/>
                         </t:div>
-                        <t:div id="groupsPanel" style="display: none;">
+                        <t:div id="groupsPanel" styleClass="hidden">
                             <t:dataList layout="unorderedList" value="#{assessment.releaseToGroups.entrySet()}" var="group" styleClass="groupList">
                                 <h:outputText value="#{group.value}" />
                                 <h:outputText value="#{group.key}" styleClass="hidden" />

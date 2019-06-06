@@ -238,7 +238,7 @@
 				<h:panelGroup rendered="#{!stat.msgDeleted}" layout="block"> 
 				<h:panelGroup>
 					<f:verbatim>
-	  					<span id="messageBody</f:verbatim><h:outputText value="#{stat.msgId}"/><f:verbatim>" style="display: none" class="messageBody">
+	  					<span id="messageBody</f:verbatim><h:outputText value="#{stat.msgId}"/><f:verbatim>" styleClass="hidden" class="messageBody">
 	  				</f:verbatim>
 	  					<h:outputText escape="false" value="#{stat.message}"/>
 					<f:verbatim>  					
@@ -349,9 +349,9 @@
 <% if(isDialogBox){ %>
     <!-- This is used to keep the dialogbox state when going to the next page (this page) -->
     <f:verbatim>
-    <input type="text" id="siteUserId" name="siteUserId" value="<%= selectedUserId%>" style="display: none;"/>
-    <input type="text" id="frameId" name="frameId" value="<%=frameId%>" style="display: none;"/>
-    <input type="text" id="dialogDivId" name="dialogDivId" value="<%=dialogDivId%>" style="display: none;"/>
+    <input type="text" id="siteUserId" name="siteUserId" value="<%= selectedUserId%>" class="hidden"/>
+    <input type="text" id="frameId" name="frameId" value="<%=frameId%>" class="hidden"/>
+    <input type="text" id="dialogDivId" name="dialogDivId" value="<%=dialogDivId%>" class="hidden"/>
     </f:verbatim>
 <%}%>
 		

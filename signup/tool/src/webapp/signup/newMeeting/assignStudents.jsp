@@ -26,21 +26,25 @@
 				clearPanel();
 				//hide addImage block
 				lastClickedAddImage= document.getElementById(predefinedByJSF + timeslotId +":addAttendee");	
-				lastClickedAddImage.style.display = "none";
+				//lastClickedAddImage.style.display = "none";
+				lastClickedAddImage.classList.add("hidden");
 				
 				var addPanel = document.getElementById(predefinedByJSF + timeslotId +":addPanel");
-    			addPanel.style.display = "block";   			   			
+    			//addPanel.style.display = "block";
+				addPanel.classList.remove("hidden");
     			lastActivePanel=addPanel;    			
     			lastUserInputEid=document.getElementById(predefinedByJSF + timeslotId +":addAttendeeEidInput");
 			}
 															
 			function clearPanel(){
 				if(lastActivePanel)
-					lastActivePanel.style.display = "none";				
-				if (lastUserInputEid)		
+					//lastActivePanel.style.display = "none";
+					lastActivePanel.classList.add("hidden");
+				if (lastUserInputEid)
 					lastUserInputEid.value="";
 				if (lastClickedAddImage)
-					lastClickedAddImage.style.display = "block";
+					//lastClickedAddImage.style.display = "block";
+					lastClickedAddImage.classList.remove("hidden");
 			}
 			
 			//Remove any "white space" (spaces, form feeds, line feeds, carriage returns, tabs, vertical tabs) before and trailing a string
@@ -157,7 +161,7 @@
 						   		</h:outputLink>
 						   	</h:panelGroup>
 						   	
-				   			<h:panelGroup id="addPanel" style="display: none;" >
+				   			<h:panelGroup id="addPanel" styleClass="hidden">
 			   					<h:panelGrid id="newAttendeeTable" columns="1">
 		   							<h:panelGroup>
 			   							<h:selectOneMenu  id="selectNewAttendee"  binding="#{NewSignupMeetingBean.newAttendeeInput}" rendered="#{!NewSignupMeetingBean.eidInputMode}">

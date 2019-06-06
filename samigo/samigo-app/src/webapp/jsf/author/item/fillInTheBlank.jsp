@@ -118,7 +118,7 @@
     <h:outputText value="#{authorMessages.fib_note_2}<br /><br />" escape="false"/>
     <h:outputText value="#{authorMessages.fib_note_3}<br /><br />" escape="false"/>
 
-    <div class="mathjax-warning" style="display: none;">
+    <div class="mathjax-warning" class="hidden">
       <h:outputText value="#{authorMessages.accepted_characters}" escape="false"/>
       <div class="alert alert-warning">
           <h:outputText value="#{authorMessages.mathjax_usage_warning}" escape="false"/>

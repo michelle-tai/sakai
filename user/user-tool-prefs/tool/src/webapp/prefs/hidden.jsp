@@ -57,15 +57,15 @@
                         <p class="instruction"><h:outputText value="#{msgs.hidden_instructions}" escape="false" /></p>
 
 
-                        <div id="reallyHideConfirm" style="display: none">
+                        <div id="reallyHideConfirm" class="hidden">
                                 <h:outputText value="#{msgs.hidden_really_hide_confirm}" />
                         </div>
 
-                        <div id="selectedTabLabelValue" style="display: none">
+                        <div id="selectedTabLabelValue" class="hidden">
                                 <h:outputText value="#{UserPrefsTool.selectedTabLabel}" />
                         </div>
 
-                        <div id="sitesByTerm" style="display: none">
+                        <div id="sitesByTerm" class="hidden">
                                 <t:dataList id="termList" value="#{UserPrefsTool.termSites.terms}"
                                             var="term" layout="simple"
                                             rowIndexVar="counter">

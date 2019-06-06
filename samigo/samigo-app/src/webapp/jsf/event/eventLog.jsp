@@ -49,7 +49,7 @@
      </h:selectOneMenu>
    </div>
    <div class="divRight col-md-8 col-lg-6 col-sm-7 col-xs-12">
-      <h:inputText id="IE_hidden" value="" disabled="true" style="display: none;" />
+      <h:inputText id="IE_hidden" value="" disabled="true" styleClass ="hidden" />
       <h:inputText id="filteredUser" value="#{eventLog.filteredUser}" size="30"
          onfocus="resetHelpValue('#{eventLogMessages.search_hint}', 'eventLogId:filteredUser')"
          onclick="resetHelpValue('#{eventLogMessages.search_hint}', 'eventLogId:filteredUser')"/>

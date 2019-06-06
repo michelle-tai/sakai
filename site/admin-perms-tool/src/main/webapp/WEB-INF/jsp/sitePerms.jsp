@@ -128,7 +128,7 @@
 </div>
 
 <!-- Hidden block to declare resource bundle variables for use in JS -->
-<div style="display: none;">
+<div class="hidden">
   <!-- By convention, the id of the span must be "i18n_"+{message code}, the container div should be set to display:none;, use kaltura.i18n(key) in JS to lookup the message -->
   <%-- <span id="i18n_listCollections.delete.collection.confirmation"><spring:message code="listCollections.delete.collection.confirmation" /></span> --%>
 </div>

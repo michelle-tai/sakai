@@ -247,14 +247,14 @@
     <!-- This is used to keep the dialogbox state when going to the next page (this page) -->
     <f:verbatim>
     
-    <input type="text" id="userId" name="userId" value="<%=userId%>" style="display: none;"/>
-    <input type="text" id="messageId" name="messageId" value="<%=messageId%>" style="display: none;"/> 
-    <input type="text" id="topicId" name="topicId" value="<%=topicId%>" style="display: none;"/>
-    <input type="text" id="forumId" name="forumId" value="<%=forumId%>" style="display: none;"/>
-    <input type="text" id="frameId" name="frameId" value="<%=frameId%>" style="display: none;"/>
-    <input type="text" id="dialogDivId" name="dialogDivId" value="<%=dialogDivId%>" style="display: none;"/>
-    <input type="text" id="gradesSavedDiv" name="gradesSavedDiv" value="<%=gradesSavedDiv%>" style="display: none;"/>
-    <input type="text" id="noProccessing" name="noProccessing" value="true" style="display: none;"/>
+    <input type="text" id="userId" name="userId" value="<%=userId%>" class="hidden"/>
+    <input type="text" id="messageId" name="messageId" value="<%=messageId%>" class=hidden"/>
+    <input type="text" id="topicId" name="topicId" value="<%=topicId%>" class="hidden"/>
+    <input type="text" id="forumId" name="forumId" value="<%=forumId%>" class="hidden"/>
+    <input type="text" id="frameId" name="frameId" value="<%=frameId%>" class="hidden"/>
+    <input type="text" id="dialogDivId" name="dialogDivId" value="<%=dialogDivId%>" class="hidden"/>
+    <input type="text" id="gradesSavedDiv" name="gradesSavedDiv" value="<%=gradesSavedDiv%>" class="hidden"/>
+    <input type="text" id="noProccessing" name="noProccessing" value="true" class="hidden"/>
     </f:verbatim>
     <%}%>
   </h:form>
