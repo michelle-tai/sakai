@@ -27,7 +27,7 @@
 			<form action="#" rsf:id="folder-picker" id="folder-picker">
 				<h2><span rsf:id="title-label"></span><span class="bold" style="margin-left:5px;" rsf:id="page-title"></span></h2>
 				<input type="hidden" rsf:id="csrf"/>
-				<span rsf:id="top-folder" id="top-folder" style="display: none"></span>
+				<span rsf:id="top-folder" id="top-folder" class="hidden"></span>
 				<input type="hidden" rsf:id="item-id" id="item-id" />
 				<p><span rsf:id="choose-label"></span></p>
 				<input type="hidden" rsf:id="folder-path" id="folder-path" />
@@ -36,7 +36,7 @@
 					 data-copyright="true"   data-multifolder="true">
 				</div>
 				<br/>
-				<div id="active-div" style="display:none">
+				<div id="active-div" class="hidden">
 					<label for="active-folder"><span rsf:id="msg=simplepage.active-folder"></span></label><br />
 					<input type="text" name="active-folder" id="active-folder" readonly="true"/>
 				</div>

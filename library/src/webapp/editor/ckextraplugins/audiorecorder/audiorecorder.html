@@ -51,8 +51,8 @@ Local i18n items are in oEditor.lang.audiorecorder.*
 
 <p id="audio-recorder-intro">
   <script>document.write(oEditor.lang.audiorecorder.intro)</script>
-    <span id="audio-time-allowed" style="display:none"> </span>
-    <span id="audio-attempts" style="display:none"> </span>
+    <span id="audio-time-allowed" class="hidden"> </span>
+    <span id="audio-attempts" class="hidden"> </span>
 
   <div id="audio-controls">
     <div id="audio-timer-wrapper"><span id="audio-timer">00</span> / <span id="audio-max-time">30</span> <span><script>document.write(oEditor.lang.audiorecorder.seconds_label)</script></span></div>
@@ -60,23 +60,23 @@ Local i18n items are in oEditor.lang.audiorecorder.*
     <button id="audio-stop" disabled><script>document.write(oEditor.lang.audiorecorder.stop)</script></button>
     <button id="audio-play" disabled><script>document.write(oEditor.lang.audiorecorder.play)</script></button>
     <button id="audio-upload" disabled><script>document.write(oEditor.lang.audiorecorder.post)</script></button>
-    <div id="audio-posting" style="display:none"><script>document.write(oEditor.lang.audiorecorder.posting)</script></div>
-    <div id="audio-finished" style="display:none"><script>document.write(oEditor.lang.audiorecorder.complete)</script></div>
-    <div id="audio-statusbar" style="display:none"> </div>
+    <div id="audio-posting" class="hidden"><script>document.write(oEditor.lang.audiorecorder.posting)</script></div>
+    <div id="audio-finished" class="hidden"><script>document.write(oEditor.lang.audiorecorder.complete)</script></div>
+    <div id="audio-statusbar" class="hidden"> </div>
     <div id="audio-levelbar"> </div>
-    <div id="txtUrl" style="display:none"></div>
-    <div id="flashrecarea" style="display:none"><p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p></div>
-    <canvas id="audio-analyzer" style="display:none"></canvas>
+    <div id="txtUrl" class="hidden"></div>
+    <div id="flashrecarea" class="hidden"><p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p></div>
+    <canvas id="audio-analyzer" class="hidden"></canvas>
   </div>
 
-  <audio id="audio-html5" style="display:none"> </audio>
-  <div id="audio-debug-log" style="display:none">
+  <audio id="audio-html5" class="hidden"> </audio>
+  <div id="audio-debug-log" class="hidden">
     <h2>Log</h2>
     <pre id="log"></pre>
   </div>
 
           <!-- Would be nice if the Browse Server button could go here -->
-          <div id="tdBrowse" style="display: none" rowspan="2">
+          <div id="tdBrowse" class="hidden" rowspan="2">
               <input id="btnBrowse" onclick="BrowseServer();" type="button" value="Browse Server" />
               <script type="text/javascript">document.getElementById("btnBrowse").value = oEditor.lang.common.browseServer;</script>
           </div>

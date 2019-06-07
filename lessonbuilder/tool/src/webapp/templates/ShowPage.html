@@ -720,9 +720,9 @@
                                                     <span rsf:id="select-checklistitem-name"></span>
                                                 </label>
                                                 <span class="tooltip-content" rsf:id="select-checklistitem-linked-details" ></span>
-                                                <span class="saveChecklistSuccess checklistSaveMessage" style="display: none;">Save successful!</span>
-                                                <span class="saveChecklistError checklistSaveMessage" style="display: none;">Unable to save checklist item</span>
-                                                <span class="saveChecklistSaving checklistSaveMessage" style="display: none;"><img src="../images/loading.gif" alt="Saving checklist..."/></span>
+                                                <span class="saveChecklistSuccess checklistSaveMessage" class="hidden";>Save successful!</span>
+                                                <span class="saveChecklistError checklistSaveMessage" class="hidden";>Unable to save checklist item</span>
+                                                <span class="saveChecklistSaving checklistSaveMessage" class="hidden";><img src="../images/loading.gif" alt="Saving checklist..."/></span>
                                             </div>
                                         </div>
                                         <input type="hidden" rsf:id="checklistId" id="checklistId" class="checklistId"/>
@@ -776,10 +776,10 @@
 			    </div>
                         </div>
                             <div rsf:id="student-td" role="toolbar" class="edit-col"><div><a role="button" href="#" class="usebutton gradingPaneLink" rsf:id="studentGradingPaneLink" ><span aria-hidden="true" class="fa-list-ul fa-edit-icon"></span></a><a role="button" aria-haspopup="dialog" aria-controls="student-dialog" href="#" class="usebutton edit-student" onclick="return false" rsf:id="edit-student"><span aria-hidden="true" class="fa-edit fa-edit-icon"></span></a><a role="button" href="#" class="usebutton del-item-link" onclick="return false"><span aria-hidden="true" class="fa-trash-o fa-edit-icon"></span></a><a role="button" aria-haspopup="dialog" aria-controls="student-dialog" href="#" class="usebutton add-link" onclick="return false"><span aria-hidden="true" class="fa-plus fa-edit-icon plus-edit-icon"></span></a></div></div>                        
-                        <div style="display:none" rsf:id="studentId" class="student-id"></div>
+                        <div class="hidden" rsf:id="studentId" class="student-id"></div>
                         <div style="display:none" rsf:id="studentAnon" class="studentAnon"></div>
                         <div style="display:none" rsf:id="studentComments" class="studentComments"></div>
-			<div style="display:none" rsf:id="peer-eval" class="peer-eval"></div>
+			<div class="hidden" rsf:id="peer-eval" class="peer-eval"></div>
 			<div style="display:none" rsf:id="peer-eval-title" class="peer-eval-title"></div>
 			<div style="display:none" rsf:id="peer-eval-open-date" class="peer-eval-open-date"></div>
 			<div style="display:none" rsf:id="peer-eval-open-time" class="peer-eval-open-time"></div>
