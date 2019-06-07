@@ -30,7 +30,7 @@
                // Load by ajax only for the first time (remaining action will only be hide/show)
                if(jQuery(middle + ' .loaded').length == 0) {
                    jQuery(middle + ' .tabsel a').click();
-                   jQuery(middle).append('<span class="loaded" style="display: none"></span>');
+                   jQuery(middle).append('<span class="loaded" class="hidden"></span>');
                }
 
                jQuery(more).hide();
@@ -67,7 +67,7 @@
             </div>
             <img src="/library/image//sakai/arrowDown.gif" alt="[ + ]" wicket:message="title:overview_show_more"/>
           </a>
-          <a wicket:id="showLess" href="#" style="display: none">
+          <a wicket:id="showLess" href="#" class="hidden">
             <img src="/library/image//sakai/arrowUp.gif" alt="[ - ]" wicket:message="title:overview_show_less"/>
             <div class="showText">
                 <wicket:message key="overview_show_less">[show less]</wicket:message>

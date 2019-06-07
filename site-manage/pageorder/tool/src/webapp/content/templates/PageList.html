@@ -29,7 +29,7 @@
 							<ul class="sortable" id="reorder-list">
 								<li rsf:id="page-row:" id="content:::page-row::" class="sortable_item reorder-element" tabindex="0">
 									<div rsf:id="tool-icon"></div>
-									<div class="item_edit_box" style="display: none;">
+									<div class="item_edit_box" class="hidden";">
 										<div>
 											<label rsf:id="page-name-label"for="page-name-input">Title</label>
 											<input rsf:id="page-name-input" class="new_title" id="page-name-input"></input>
@@ -71,11 +71,11 @@
 												</a>
 											</li>
 											<li class="notsortable">
-												<a href="#" rsf:id="hide-link-off" class="item_control hide_link" style="display: none" title="Hide This Page From Normal Users" alt="hide this page" onclick="doHidePage(this); return false;">
+												<a href="#" rsf:id="hide-link-off" class="item_control hide_link" class="hidden" title="Hide This Page From Normal Users" alt="hide this page" onclick="doHidePage(this); return false;">
 													<span class="glyphicon glyphicon-eye-close"></span>
 													<span rsf:id="msg=menu_hide_page">Make Page Invisible to Students</span>
 												</a>
-												<a href="#" rsf:id="show-link-off" class="item_control show_link" style="display: none" title="Show This Page To Normal Users" alt="show this page" onclick="doShowPage(this); return false;">
+												<a href="#" rsf:id="show-link-off" class="item_control show_link" class="hidden" title="Show This Page To Normal Users" alt="show this page" onclick="doShowPage(this); return false;">
 													<span class="glyphicon glyphicon-eye-open"></span>
 													<span rsf:id="msg=menu_show_page">Make Page Visible to Students</span>
 												</a>
@@ -91,11 +91,11 @@
 												</a>
 											</li>
 											<li class="notsortable">
-												<a href="#" rsf:id="disable-link-off" class="item_control disable_link" style="display: none" title="Disable This Page For Normal Users" alt="disable this page" onclick="doDisablePage(this); return false;">
+												<a href="#" rsf:id="disable-link-off" class="item_control disable_link" class="hidden" title="Disable This Page For Normal Users" alt="disable this page" onclick="doDisablePage(this); return false;">
 													<span class="glyphicon glyphicon-lock"></span>
 													<span rsf:id="msg=menu_lock_page">Lock Access to this Page</span>
 												</a>
-												<a href="#" rsf:id="enable-link-off" class="item_control enable_link" style="display: none" title="Enable This Page For Normal Users" alt="enable this page" onclick="doEnablePage(this); return false;">
+												<a href="#" rsf:id="enable-link-off" class="item_control enable_link" class="hidden" title="Enable This Page For Normal Users" alt="enable this page" onclick="doEnablePage(this); return false;">
 													<span class="glyphicon glyphicon-thumbs-up"></span>
 													<span rsf:id="msg=menu_enable_page">Enable Access to this Page</span>
 												</a>
@@ -110,7 +110,7 @@
 									</div>
 								</li>
 							</ul>
-							<div id="new-page-buffer" style="display: none;">Nothing at first</div>
+							<div id="new-page-buffer" class="hidden";">Nothing at first</div>
 						</div>
 					</td></tr>
 				</table>

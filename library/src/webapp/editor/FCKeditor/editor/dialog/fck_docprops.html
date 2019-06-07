@@ -491,7 +491,7 @@ function SetUrl( url )
 					<label for="chkIncXHTMLDecl" fcklang="DlgDocIncXHTML">
 						Include XHTML Declarations</label>
 				</div>
-				<div id="divBackground" style="display: none">
+				<div id="divBackground" class="hidden">
 					<span fcklang="DlgDocBgColor">Background Color</span><br />
 					<input id="txtBackColor" type="text" onchange="UpdatePreview();" onkeyup="UpdatePreview();" />&nbsp;<input
 						id="btnSelBackColor" onclick="SelectColor( 'Back' )" type="button" value="Select..."
@@ -512,7 +512,7 @@ function SetUrl( url )
 					<label for="chkBackNoScroll" fcklang="DlgDocBgNoScroll">
 						Nonscrolling Background</label>
 				</div>
-				<div id="divColors" style="display: none">
+				<div id="divColors" class="hidden">
 					<table cellspacing="0" cellpadding="0" width="100%" border="0">
 						<tr>
 							<td>
@@ -573,7 +573,7 @@ function SetUrl( url )
 						</tr>
 					</table>
 				</div>
-				<div id="divMeta" style="display: none">
+				<div id="divMeta" class="hidden">
 					<span fcklang="DlgDocMeIndex">Document Indexing Keywords (comma separated)</span><br />
 					<textarea id="txtMetaKeywords" style="width: 100%" rows="2" cols="20"></textarea>
 					<br />
@@ -588,7 +588,7 @@ function SetUrl( url )
 				</div>
 			</td>
 		</tr>
-		<tr id="ePreview" style="display: none">
+		<tr id="ePreview" class="hidden">
 			<td>
 				<span fcklang="DlgDocPreview">Preview</span><br />
 				<iframe id="frmPreview" src="fck_docprops/fck_document_preview.html" width="100%"

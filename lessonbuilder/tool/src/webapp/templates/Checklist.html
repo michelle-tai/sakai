@@ -30,7 +30,7 @@
 	<input type="hidden" rsf:id="add-before" id="add-before" />
         <div rsf:id="instructions">Enter your page content below</div>
 
-        <div class="ui-widget" id="checklist-error-container" style="display: none;">
+        <div class="ui-widget" id="checklist-error-container" class="hidden";">
             <div class="messageError">
                 <p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
                     <strong rsf:id="msg=simplepage.error_colon"></strong> <span id="checklist-error"></span></p>
@@ -62,7 +62,7 @@
             <fieldset>
                 <legend class="no-border"><h3 rsf:id="msg=simplepage.add-checklist-item"></h3></legend>
                 <div id="checklistItems">
-                    <li id="copyableChecklistItemDiv" style="display: none;" class="ui-state-default">
+                    <li id="copyableChecklistItemDiv" class="hidden"; class="ui-state-default">
                         <span class="fa fa-sort handle checklist-icons"></span>
                         <input type="hidden" rsf:id="checklist-item-complete" />
                         <input type="hidden" rsf:id="checklist-item-id" class="checklist-item-id" />
@@ -108,7 +108,7 @@
             </div>
         </div>
 
-        <span style="display:none;" id="deleteButtonLangSupp" rsf:id="msg=simplepage.delete_page_confirm"></span>
+        <span class="hidden";" id="deleteButtonLangSupp" rsf:id="msg=simplepage.delete_page_confirm"></span>
         <p class="act">
             <input id="submitButton" accesskey ="s" rsf:id="save" value="Save" type="submit" class="active" />
             <input accesskey ="x" rsf:id="cancel" value="Cancel" type="submit"/>
@@ -135,7 +135,7 @@
         </form>
     </div>
 </div>
-<div id="messages" style="display:none;">
+<div id="messages" class="hidden";>
     <p rsf:id="msg=simplepage.checklist-name-required" id="simplepage.checklist-name-required"></p>
 </div>
 <script type="text/javascript" language="JavaScript" src="$context/js/checklist.js"></script>
