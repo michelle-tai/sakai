@@ -102,7 +102,7 @@
 				<f:verbatim><a name="boldMsg"></a></f:verbatim>
 				<f:verbatim><div class="hierItemBlock" style="border:1px solid #fc6;background:#ffe;padding:0 5px"></f:verbatim>
 					<f:verbatim>
-	  					<span id="messageBody" class="messageBody" style="display: none" class="messageBody">
+	  					<span id="messageBody" class="messageBody hidden">
 	  				</f:verbatim>
 	  					<h:outputText escape="false" value="#{msgDecorateBean.message.body}"/>
 					<f:verbatim>  					

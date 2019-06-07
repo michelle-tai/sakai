@@ -84,7 +84,7 @@
                         <f:selectItem itemValue="1" itemLabel="#{msgs.rank_based_on_individual}" />
                     </h:selectOneRadio>
                     <f:verbatim></td></tr></table></f:verbatim>
-                    <f:verbatim><div id="type1div" style="display: none"></f:verbatim>
+                    <f:verbatim><div id="type1div" class="hidden"></f:verbatim>
                     <f:subview id="picker1">
                         <%@ include file="sendToPicker.jsp"%>
                     </f:subview>

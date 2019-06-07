@@ -176,7 +176,7 @@
 						</h:selectOneRadio>
 					</h:panelGroup>
 					<!-- Add Bulk Entries by date -->
-					<h:panelGrid columns="1" styleClass="jsfFormTable indnt1 bulkAddByDatePanel" style="display: none">
+					<h:panelGrid columns="1" styleClass="jsfFormTable indnt1 bulkAddByDatePanel hidden">
 						<h:panelGroup styleClass="shorttext">
 							<h:outputLabel for="dataStartDate">
 								<h:outputText value="*" styleClass="reqStar"/>

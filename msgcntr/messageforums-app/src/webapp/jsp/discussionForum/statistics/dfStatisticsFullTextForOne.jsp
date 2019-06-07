@@ -69,7 +69,7 @@
    			<h:column>
 				<h:panelGroup rendered="#{!stat.msgDeleted}" layout="block">
    				<f:verbatim>
-  					<span id="messageBody</f:verbatim><h:outputText value="#{stat.msgId}"/><f:verbatim>" style="display: none" class="messageBody">
+  					<span id="messageBody</f:verbatim><h:outputText value="#{stat.msgId}"/><f:verbatim>" class="messageBody hidden">
   				</f:verbatim>
   					<h:outputText escape="false" value="#{stat.message}"/>
 				<f:verbatim>  					

@@ -66,6 +66,6 @@
 
     </div>
 
-    <div id="data" style="display: none">
+    <div id="data" class="hidden">
         <h:outputText escape="false" value="#{ForumTool.totalAssignToListJSON}" />
     </div>

@@ -35,7 +35,7 @@
 </head>
 <body onload="<%=request.getAttribute("sakai.html.body.onload")%>">
 <!-- Hidden block to declare resource bundle variables for use in JS -->
-<div style="display: none;">
+<div class="hidden">
   <!-- By convention, the id of the span must be "i18n_"+{message code}, the container div should be set to display:none;, use kaltura.i18n(key) in JS to lookup the message -->
 </div>
 <div class="portletBody">

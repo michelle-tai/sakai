@@ -594,7 +594,7 @@
 											</h:panelGroup>
 										</h:panelGroup>
 																			
-										<h:panelGroup  id="editTimeSlot" style="display: none;">
+										<h:panelGroup  id="editTimeSlot" styleClass="hidden">
 											<h:panelGrid columns="1"  >
 												<h:panelGroup >
 													<h:commandLink id="lockTimeslot" action="#{OrganizerSignupMBean.processLockTsAction}" rendered="#{!timeSlotWrapper.timeSlot.locked}" title="#{msgs.event_tool_tips_lock_label}">
@@ -710,7 +710,7 @@
 						   							
 						   						</h:panelGrid>
 						   						
-								   				<h:panelGroup id="editPanel" style="display: none;">
+								   				<h:panelGroup id="editPanel" styleClass="hidden">
 									   					<h:panelGrid columns="1" >
 									   							<h:panelGroup rendered="#{!OrganizerSignupMBean.groupType}" >
 										   							<h:selectOneRadio id="selcetActionType" value="#{OrganizerSignupMBean.selectedAction}" onclick="showHideActionTypePanel('#{timeSlotWrapper.positionInTSlist}','#{attendeeWrapper.positionIndex}',this.value)">
@@ -720,7 +720,7 @@
 										   							</h:selectOneRadio>	
 									   							</h:panelGroup>
 									   									   				
-										   						<h:panelGrid id="replaceAction" columns="2" style="display: none;">
+										   						<h:panelGrid id="replaceAction" columns="2" styleClass="hidden">
 										   							<h:outputText value="#{msgs.event_replaceby}" escape="false" rendered="#{!OrganizerSignupMBean.eidInputMode}"/>
 										   							<h:outputText value="#{msgs.event_replaceby_Eid}" escape="false" rendered="#{OrganizerSignupMBean.eidInputMode}"/>
 										   							<h:panelGroup rendered="#{!OrganizerSignupMBean.eidInputMode}">
@@ -732,7 +732,7 @@
 									   								
 										   						</h:panelGrid>
 										   					
-										   						<h:panelGrid id="swapAction" columns="2" style="display: none;">
+										   						<h:panelGrid id="swapAction" columns="2" styleClass="hidden">
 										   							<h:outputText value="#{msgs.event_swapWith}" escape="false"/>
 										   							<h:panelGroup>
 											   							<h:selectOneMenu  id="swapAttendeeList"  binding="#{OrganizerSignupMBean.attendeeTimeSlotWithId}">
@@ -741,7 +741,7 @@
 									   								</h:panelGroup>
 										   						</h:panelGrid>
 										   					
-										   						<h:panelGrid id="moveAction" columns="2" style="display: none;">
+										   						<h:panelGrid id="moveAction" columns="2" styleClass="hidden">
 										   							<h:outputText value="#{msgs.event_moveToTimeslot}" escape="false"/>
 										   							<h:panelGroup>
 											   							<h:selectOneMenu  id="selectTimeslot" binding="#{OrganizerSignupMBean.selectedTimeslotId}"> 
@@ -772,7 +772,7 @@
 						   					</h:outputLink>
 						   				</h:panelGroup>
 
-										<h:panelGroup id="addPanel" styleClass="addPanel" style="display: none;">
+										<h:panelGroup id="addPanel" styleClass="addPanel hidden">
 											<h:panelGroup id="addNewAttendeeTable" layout="block">
 												<h:panelGroup styleClass="form-group row" rendered="#{!OrganizerSignupMBean.eidInputMode}" layout="block">
 													<h:outputLabel value="#{msgs.attendee_select}" for="newAttendeeList" escape="false" styleClass="col-lg-4" />
@@ -880,7 +880,7 @@
 								   					</h:panelGroup>
 								   				</h:panelGroup>
 	
-								   				<h:panelGroup id="addWaiterPanel" style="display: none;">
+								   				<h:panelGroup id="addWaiterPanel" styleClass="hidden">
 								   					<h:panelGrid columns="1" >
 								   							<h:panelGroup>
 											   							<h:selectOneRadio id="selcetAddWaiterType"  binding="#{OrganizerSignupMBean.listPendingType}" >

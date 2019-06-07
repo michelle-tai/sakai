@@ -21,7 +21,7 @@
   		
 	<h:outputText value="  " />
 	<h:panelGroup>
-		<f:verbatim><div id='adv_input' style="display: none;" ></f:verbatim>
+		<f:verbatim><div id='adv_input' class="hidden" ></f:verbatim>
 		
 		  <h:outputText value=" " />
 			<h:outputText value=" " />

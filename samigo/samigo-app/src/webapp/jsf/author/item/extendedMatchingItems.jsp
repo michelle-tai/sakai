@@ -50,7 +50,7 @@
 </head>
 <body onload="<%=request.getAttribute("html.body.onload")%>">
     
-	<div id="portletContent" class="portletBody" style="display: none;">
+	<div id="portletContent" class="portletBody hidden">
 		<!-- content... -->
 		<!-- FORM -->
 		<!-- HEADING -->

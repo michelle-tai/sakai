@@ -544,7 +544,7 @@ document.links[newindex].onclick();
   </h:panelGrid>
 </h:panelGrid>
 
-   <h:commandButton id="autoSave" type="submit" value="" style="display: none"
+   <h:commandButton id="autoSave" type="submit" value="" styleClass="hidden"
    action="#{delivery.auto_save}" rendered="#{delivery.actionString=='takeAssessment'
                   || delivery.actionString=='takeAssessmentViaUrl'}" />
 
