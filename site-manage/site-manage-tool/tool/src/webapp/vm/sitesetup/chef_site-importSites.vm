@@ -124,10 +124,10 @@
 													#end />
 												<label  class="skip" for="toolSite$toolCount$siteCount">$tlang.getString('import.choose.label1')  $toolTitle $tlang.getString('import.choose.label2') $validator.escapeHtml($site.getTitle())</label>
                                                 #if ($importOptions.get(${toolId}).isPresent())
-                                                <a id="toolSite${toolCount}${siteCount}-options-link" style="display: none;" href="javascript:;" class="siteimport-options-link" data-options-id="${toolCount}-${siteCount}-options" title="$tlang.getString('import.options.title')">
+                                                <a id="toolSite${toolCount}${siteCount}-options-link" href="javascript:;" class="siteimport-options-link hidden" data-options-id="${toolCount}-${siteCount}-options" title="$tlang.getString('import.options.title')">
                                                     <span title="$tlang.getString('import.options.title')">$tlang.getString('import.options.title').toLowerCase()</span>
                                                 </a>
-                                                <div id="${toolCount}-${siteCount}-options" class="siteimport-options" style="display: none;">
+                                                <div id="${toolCount}-${siteCount}-options" class="siteimport-options hidden">
 													#foreach ($option in $importOptions.get(${toolId}).get())
 													<div>
 														<label>

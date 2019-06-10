@@ -224,7 +224,7 @@
 					$tlang.getFormattedMessage("ediacc.canbejoi", $uiService)
 				</label>
 			</div>
-			<div id="joinerrole" #if ($joinable) style="display: block;" #else  style="display: none;" #end>
+			<div id="joinerrole" #if ($joinable) style="display: block;" #else  class="hidden" #end>
 				<div class="messageWarning indnt3" style="width:60%">$tlang.getString("ediacc.yousitcan.warn")</div>
 				<p class="checkbox indnt3">
 					<label for="joinerRole">

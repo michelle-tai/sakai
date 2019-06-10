@@ -154,11 +154,11 @@
                         </span>
                         <span id="fromTemplateSettingsContainer_instruction">
                             <a href="#" id="fromTemplateSettingsContainer_instruction_control" class="itemAction">$tlang.getString("sitetype.template.get.info")</a>
-                            <div id="fromTemplateSettingsContainer_instruction_body" style="display:none;" title="$tlang.getString("sitetype.template.close.info")">
-                                <p id="fromTemplateSettingsContainer_instruction_body_copyUsers" style="display: none">
+                            <div id="fromTemplateSettingsContainer_instruction_body" class="hidden" title="$tlang.getString("sitetype.template.close.info")">
+                                <p id="fromTemplateSettingsContainer_instruction_body_copyUsers" class="hidden">
                                     $tlang.getString("sitetype.template.copy.users.info") 
                                 </p>
-                                <p id="fromTemplateSettingsContainer_instruction_body_copyContent" style="display: none">
+                                <p id="fromTemplateSettingsContainer_instruction_body_copyContent" class="hidden">
                                     $tlang.getString("sitetype.template.copy.content.info")
                                 </p>
                                 <p id="fromTemplateSettingsContainer_instruction_body_publishSite">
@@ -203,7 +203,7 @@
                                     <div>
                                         <h4 class="specialLink">
                                             <a href="$siteType">
-                                                <span class="open"  style="display: none">&#9662;</span><span class="closed"> &#9656;</span>
+                                                <span class="open hidden">&#9662;</span><span class="closed"> &#9656;</span>
                                                  <em>$siteType.replace("_", " ")</em>
                                                  <span class="siteTypeRowBlurb"></span>
                                              </a>
@@ -211,7 +211,7 @@
                                     </div>
                                 </li>
                            #end
-                            <li id="rowTemplate$templateNum" class="row$siteType" #if (!$isExpandTemplates) style="display: none"#end>
+                            <li id="rowTemplate$templateNum" class="row$siteType" #if (!$isExpandTemplates) class="hidden" #end>
                                 <div class="templateName" style="white-space: nowrap;">
                                     <input type="radio" name ="templateSiteId"  class="$templateSite.type" value="$templateSite.id" id="Template$templateNum"/>
                                     <label for="Template$templateNum" title="$templateSite.title">$templateSite.title</label>

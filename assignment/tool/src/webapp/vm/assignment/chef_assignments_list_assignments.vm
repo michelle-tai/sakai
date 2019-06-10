@@ -445,7 +445,7 @@
 											#end
                                         </strong>
 
-                                        <div id="groupsPanel" style="display: none;">
+                                        <div id="groupsPanel" class="hidden">
                                             <ul>
 												#foreach( $title in $groupTitleList )
                                                     <li>$title</li>

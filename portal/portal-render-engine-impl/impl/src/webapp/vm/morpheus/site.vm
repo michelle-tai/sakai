@@ -243,7 +243,7 @@
                         <div id="cropme">
                             <img style="maxWidth: 100%" />
                         </div>
-                        <div id="cropToolbar" class="btn-toolbar" style="display: none;">
+                        <div id="cropToolbar" class="btn-toolbar hidden">
                             <div class="btn-group">
                                 <a class="profile-image-zoom-in btn btn-sm btn-default" href="javascript:void(0)"></a>
                                 <a class="profile-image-zoom-out btn btn-sm btn-default" href="javascript:void(0)"></a>

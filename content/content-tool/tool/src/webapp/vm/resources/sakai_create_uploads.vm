@@ -137,7 +137,7 @@
     </form>
 </div>
 #parse("/vm/resources/sakai_properties_scripts.vm")
-<div id="preview-template" style="display: none;">
+<div id="preview-template" class="hidden">
     <div class="dz-preview dz-file-preview">
         <div class="dz-image"><img data-dz-thumbnail=""></div>
         <div class="dz-details">

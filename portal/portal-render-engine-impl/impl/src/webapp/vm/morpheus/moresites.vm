@@ -1,10 +1,10 @@
 #if (${userIsLoggedIn})
-    <div id="maxToolsText" style="display: none">${rloader.sit_alltools}</div>
-    <div id="maxToolsInt" style="display: none">${maxToolsInt}</div>
-    <div id="refreshNotificationText" style="display: none">${rloader.sit_refresh_favorites}</div>
-    <div id="addToFavoritesText" style="display: none">${rloader.moresite_add_to_favorites}</div>
-    <div id="removeFromFavoritesText" style="display: none">${rloader.moresite_remove_from_favorites}</div>
-    <div id="maxFavoritesLimitReachedText" style="display: none">$rloader.getFormattedMessage("sit_favorite_limit_reached", $tabsSites.maxFavoritesShown)</div>
+    <div id="maxToolsText" class="hidden">${rloader.sit_alltools}</div>
+    <div id="maxToolsInt" class="hidden">${maxToolsInt}</div>
+    <div id="refreshNotificationText" class="hidden">${rloader.sit_refresh_favorites}</div>
+    <div id="addToFavoritesText" class="hidden">${rloader.moresite_add_to_favorites}</div>
+    <div id="removeFromFavoritesText" class="hidden">${rloader.moresite_remove_from_favorites}</div>
+    <div id="maxFavoritesLimitReachedText" class="hidden">$rloader.getFormattedMessage("sit_favorite_limit_reached", $tabsSites.maxFavoritesShown)</div>
 
     <div id="selectSiteModal" class="outscreen" role="dialog" aria-label="${rloader.sit_modal_description}">
 
@@ -56,8 +56,8 @@
             <div class="tab-pane">
                 <div class="tab-box" id="otherSitesCategorWrap" aria-labelledby="tab-othersites" role="tabpanel">
 
-                    <p style="display: none" class="favorites-help-text autofavorite-enabled">${rloader.sit_star_sites_with_autofav_description}</p>
-                    <p style="display: none" class="favorites-help-text autofavorite-disabled">${rloader.sit_star_sites_description}</p>
+                    <p class="favorites-help-text autofavorite-enabled hidden">${rloader.sit_star_sites_with_autofav_description}</p>
+                    <p class="favorites-help-text autofavorite-disabled hidden">${rloader.sit_star_sites_description}</p>
 
                     <hr />
 
@@ -141,13 +141,13 @@
 
                 </div><!--  end of #otherSitesCategorWrap -->
 
-                <div style="display: none" class="tab-box" id="organizeFavorites" aria-labelledby="tab-favorites" role="tabpanel">
+                <div class="tab-box hidden" id="organizeFavorites" aria-labelledby="tab-favorites" role="tabpanel">
                     <div id="organize-favorites-pane">
                         <h2 class="heading">${rloader.moresite_organize_favorites}</h2>
 
-                        <p style="display: none" id="favoritesToShow">$rloader.getFormattedMessage("sit_drag_sites_to_reorder", $tabsSites.maxFavoritesShown)</p>
+                        <p class="hidden" id="favoritesToShow">$rloader.getFormattedMessage("sit_drag_sites_to_reorder", $tabsSites.maxFavoritesShown)</p>
 
-                        <p style="display: none" id="noFavoritesToShow">${rloader.sit_no_favorites_selected}</p>
+                        <p class="hidden" id="noFavoritesToShow">${rloader.sit_no_favorites_selected}</p>
 
                         <ul id="organizeFavoritesList" class="organizeFavoritesList favoriteSiteList">
                         </ul>
@@ -160,7 +160,7 @@
                     <div id="favorite-settings-pane">
                         <div id="autofav-description">${rloader.sit_autofav_description}</div>
 
-                        <div class="onoffswitch" style="display: none">
+                        <div class="onoffswitch hidden">
                             <button role="switch" aria-checked="true" aria-labelledby="autofav-description" class="btn btn-lg" id="autoFavoritesEnabled">
                                 <span class="onoffswitch-inner">${rloader.moresite_favorites_off}</span>
                                 <span class="onoffswitch-switch">${rloader.moresite_favorites_on}</span>

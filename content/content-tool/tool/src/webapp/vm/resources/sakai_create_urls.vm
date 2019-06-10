@@ -55,7 +55,7 @@
 						<label for="displayName${DOT}$i">$tlang.getString("label.website")</label> 
 						<input type="text" id="displayName${DOT}$i" name="displayName${DOT}$i" class="form-control" maxlength="512"/> 
 						<a href="#" id="propsTrigger${DOT}$i">$tlang.getString("edit.show")</a>
-						<a class="remove" style="display: none" href="#" id="removeTrigger${DOT}$i" title="$tlang.getString("edit.remove")" >
+						<a class="remove hidden" href="#" id="removeTrigger${DOT}$i" title="$tlang.getString("edit.remove")" >
 							<span class="fa fa-times" aria-hidden="true"></span>
 							<span class="sr-only">x</span>
 						</a>

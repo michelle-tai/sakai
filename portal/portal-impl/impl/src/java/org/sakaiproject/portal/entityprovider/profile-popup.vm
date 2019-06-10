@@ -40,15 +40,15 @@
         </tr>
     </table>
 
-    <button id="profile-popup-remove-button-${connectionUserId}" title="${i18n.remove_tooltip}" #if (!${connected})style="display: none;"#end>
+    <button id="profile-popup-remove-button-${connectionUserId}" title="${i18n.remove_tooltip}" #if (!${connected})class="hidden"#end>
         ${i18n.remove}
     </button>
 
-    <button id="profile-popup-cancel-button-${connectionUserId}" title="${i18n.cancel_tooltip}" #if (!${requested})style="display: none;"#end>
+    <button id="profile-popup-cancel-button-${connectionUserId}" title="${i18n.cancel_tooltip}" #if (!${requested})class="hidden"#end>
         ${i18n.cancel}
     </button>
 
-    <div id="profile-popup-incoming-block-${connectionUserId}" class="profile-popup-incoming-block" #if (!${incoming})style="display: none;"#end>
+    <div id="profile-popup-incoming-block-${connectionUserId}" class="profile-popup-incoming-block" #if (!${incoming})class="hidden"#end>
         <button id="profile-popup-accept-button-${connectionUserId}" title="${i18n.accept_tooltip}" class="profile-popup-accept-button">
             ${i18n.accept}
         </button><button id="profile-popup-ignore-button-${connectionUserId}" title="${i18n.ignore_tooltip}" class="profile-popup-ignore-button">
@@ -56,7 +56,7 @@
         </button>
     </div>
 
-    <button id="profile-popup-request-button-${connectionUserId}" title="${i18n.connect_tooltip}" #if (!${unconnected})style="display: none;"#end>
+    <button id="profile-popup-request-button-${connectionUserId}" title="${i18n.connect_tooltip}" #if (!${unconnected})class="hidden"#end>
         ${i18n.connect}
     </button>
 </div>

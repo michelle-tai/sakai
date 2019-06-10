@@ -24,8 +24,8 @@
                                 <span class="checkedCount"></span>
                                 #if ($groupCount == 1)
                                     <span class="sel_unsel_core">
-                                        <em id="selectAll" class="selectAll" href="#" style="display: none;"> - select all</em>
-                                        <em id="unSelectAll" class="selectAll" href="#" style="display: none;"> - unselect all</em>
+                                        <em id="selectAll" class="selectAll hidden" href="#"> - select all</em>
+                                        <em id="unSelectAll" class="selectAll hidden" href="#"> - unselect all</em>
                                     </span>
                                 #end
                             </a>

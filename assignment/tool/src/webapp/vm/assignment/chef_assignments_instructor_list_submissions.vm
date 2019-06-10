@@ -252,7 +252,7 @@ function printView(url) {
 				<p class="discTria">
 					<a href="javascript:void(0)" onclick="ASN.toggleSendFeedbackPanel();">
 						<img id="expandSendFeedback" src="#imageLink("sakai/expand.gif")" alt="$tlang.getString("sendFeedback.show")" border="0" width="13" height="13" align="top" />
-						<img id="collapseSendFeedback" style="display: none;" src="#imageLink("sakai/collapse.gif")" alt="$tlang.getString("sendFeedback.hide")" border="0" width="13" height="13" align="top" />
+						<img id="collapseSendFeedback" class="hidden" src="#imageLink("sakai/collapse.gif")" alt="$tlang.getString("sendFeedback.hide")" border="0" width="13" height="13" align="top" />
 						$tlang.getString("sendFeedback.label")
 					</a>
 				</p>
@@ -293,7 +293,7 @@ function printView(url) {
 				<p class="discTria">
 				<a href="javascript:void(0)" onclick="ASN.toggleAllowResubmissionPanel();">
 					<img id="expandAllowResub" src="#imageLink("sakai/expand.gif")" alt="$tlang.getString("allowResubmission.show")" border="0" width="13" height="13" align="top" />
-					<img id="collapseAllowResub" style="display: none;" src="#imageLink("sakai/collapse.gif")" alt="$tlang.getString("allowResubmission.hide")" border="0" width="13" height="13" align="top" />
+					<img id="collapseAllowResub" class="hidden" src="#imageLink("sakai/collapse.gif")" alt="$tlang.getString("allowResubmission.hide")" border="0" width="13" height="13" align="top" />
 						#if ($assignment.IsGroup)
 							$tlang.getString("allowResubmission.groups.label")
 						#else
