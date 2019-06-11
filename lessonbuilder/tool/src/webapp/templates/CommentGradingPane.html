@@ -66,8 +66,8 @@
 				<td style="text-align:right;white-space:nowrap" rsf:id="student-grade">
 					<span rsf:id="gradingSpan">
 						<img class="statusImg" src="$context/images/no-status.png" id="statusImg" height="16px" width="16px" alt=""></img>
-						<span rsf:id="msg=simplepage.comments-points"></span><span style="display:none" class="uuidBox" rsf:id="commentsUUID"></span>
-						<span style="display:none" class="pointsSpan" rsf:id="commentPoints"></span>
+						<span rsf:id="msg=simplepage.comments-points"></span><span class="hidden" class="uuidBox" rsf:id="commentsUUID"></span>
+						<span class="hidden" class="pointsSpan" rsf:id="commentPoints"></span>
 						<input rsf:id="pointsBox" class="pointsBox" type="text" size="3"></input>
 						<span rsf:id="maxpoints"></span>
 					</span>
@@ -81,7 +81,7 @@
 			<tr rsf:id="details-row" id="details-row" class="details-row">
 				<td rsf:id="details-cell">
 					<div class="replaceWithComments"></div>
-					<a href="#" style="display:none" rsf:id="commentsLink" class="commentsLink"></a>
+					<a href="#" class="hidden" rsf:id="commentsLink" class="commentsLink"></a>
 				</td>
 			</tr>
 
@@ -109,7 +109,7 @@
 	</form>
 		
 	<a id="zeroMissing" href="#" class="usebutton toggleButton" style="margin:4px 0px 3px 10px; " rsf:id="zeroMissing"></a> 
-	<form rsf:id="zero-form" action="#" id="zero-form" method="post" enctype="multipart/form-data" style="display:none">
+	<form rsf:id="zero-form" action="#" id="zero-form" method="post" enctype="multipart/form-data" class="hidden">
 	  <input type="hidden" rsf:id="zero-csrf" />
 	  <input type="hidden" rsf:id="zero-item" />
 	  <input type="submit" rsf:id="zero" id="zero" />

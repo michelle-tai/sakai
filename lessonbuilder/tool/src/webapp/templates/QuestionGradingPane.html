@@ -64,8 +64,8 @@
 				<td rsf:id="student-grade">
 					<span rsf:id="gradingSpan">
 						<img class="statusImg" src="$context/images/no-status.png" id="statusImg" height="16px" width="16px" alt=""></img>
-						<span rsf:id="points-text"></span><span style="display:none" class="responseId" rsf:id="responseId"></span>
-						<span style="display:none" class="pointsSpan" rsf:id="responsePoints"></span>
+						<span rsf:id="points-text"></span><span class="hidden" class="responseId" rsf:id="responseId"></span>
+						<span class="hidden" class="pointsSpan" rsf:id="responsePoints"></span>
 						<input rsf:id="pointsBox" class="pointsBox" type="text" size="3"></input>
 						<span rsf:id="maxpoints"></span>
 					</span>
@@ -87,7 +87,7 @@
 	</div>
 	
 	<a id="zeroMissing" href="#" class="zeroMissing usebutton toggleButton" style="" rsf:id="zeroMissing"></a> 
-	<form rsf:id="zero-form" action="#" id="zero-form" method="post" enctype="multipart/form-data" style="display:none">
+	<form rsf:id="zero-form" action="#" id="zero-form" method="post" enctype="multipart/form-data" class="hidden">
 	  <input type="hidden" rsf:id="zero-csrf" />
 	  <input type="hidden" rsf:id="zero-item" />
 	  <input type="submit" rsf:id="zero" id="zero" />

@@ -58,7 +58,7 @@
 				<a href="#" rsf:id="msg=addotherrecipients" onclick="RcptSelect.showOther();return false">Other Recipient(s):</a>
 			</div>
 		</div>
-		<div class="section" id="otherRecipientsDiv" style="display:none">
+		<div class="section" id="otherRecipientsDiv" class="hidden">
 			<div class="headervalue">
 				<span rsf:id="msg=otherrecipients">Other Recipients:</span>
 			</div>
@@ -77,13 +77,13 @@
 		</div>
 
 		<div class="section">
-			<div id="attachOuter" class="headerkeyholder" style="display:none">
+			<div id="attachOuter" class="headerkeyholder" class="hidden">
 				<span class="headerkey"><img src="../images/paperclip.gif" alt="attachment_img" height="15" width="15" /></span>
 			</div>
 			<div id="attachInner" class="headervalue">
 				<div id="attachmentArea"/>
 				<div id="attachLink"><img src="../images/paperclip.gif" alt="attachment_img" height="15" width="15" /> <a href="#" onclick="MailSender.addAttachment('attachmentArea'); return false;" rsf:id="msg=attachlink">Attach a file</a></div>
-				<div id="attachMoreLink" style="display:none"><a href="#" onclick="MailSender.addAttachment('attachmentArea'); return false;" rsf:id="msg=attachmorelink">Attach another file</a></div>
+				<div id="attachMoreLink" class="hidden"><a href="#" onclick="MailSender.addAttachment('attachmentArea'); return false;" rsf:id="msg=attachmorelink">Attach another file</a></div>
 			</div>
 		</div>
 
@@ -111,7 +111,7 @@
 			</div>
 		</div>
 		<input rsf:id="csrf" type="hidden" name="csrf" id="csrf" />
-		<span rsf:id="csrfvalue" id="csrfvalue" style="display:none"/>
+		<span rsf:id="csrfvalue" id="csrfvalue" class="hidden"/>
 		<div class="section headervalue act">
 			<input rsf:id="send-button" value="Send Mail" class="active" type="submit" />
 			<input rsf:id="cancel-button" value="Cancel" type="submit" />
