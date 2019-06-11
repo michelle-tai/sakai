@@ -7,7 +7,7 @@ import os
 import urllib
 
 def dirlist(request):
-   r=['<ul class="jqueryFileTree" style="display: none;">']
+   r=['<ul class="jqueryFileTree hidden">']
    try:
        r=['<ul class="jqueryFileTree" style="display: none;">']
        d=urllib.unquote(request.POST.get('dir','c:\\temp'))

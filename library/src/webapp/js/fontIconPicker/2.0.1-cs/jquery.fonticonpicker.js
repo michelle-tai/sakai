@@ -58,7 +58,7 @@
 								 '<i class="fip-icon-search"></i>' +
 							 '</div>' : '') +
 							 '<div class="selector-category">' +
-								 '<select name="" class="icon-category-select" style="display: none">' +
+								 '<select name="" class="icon-category-select hidden">' +
 								 '</select>' +
 							 '</div>' +
 							 '<div class="fip-icons-container"></div>' +

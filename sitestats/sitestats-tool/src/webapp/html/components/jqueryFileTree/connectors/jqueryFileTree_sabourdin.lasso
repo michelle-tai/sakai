@@ -25,7 +25,7 @@ if:( file_exists: ($root + $_POST.dir) )&&( File_IsDirectory:($root + $_POST.dir
 	$files = (File_ListDirectory:($root + $_POST.dir));
 	$files->(Sort);
 	if:( $files->(Size) > 0 );
-		output:'<ul class="jqueryFileTree" style="display: none;">';
+		output:'<ul class="jqueryFileTree hidden">';
 		// All dirs
 		Iterate:($files),(Local:'file');
 			if:( file_exists:($root + $_POST.dir + #file) )&&( #file != '.' )&&( #file != '..' )&&( File_IsDirectory:($root + $_POST.dir + #file) );

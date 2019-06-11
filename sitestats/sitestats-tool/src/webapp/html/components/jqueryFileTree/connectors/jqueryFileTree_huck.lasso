@@ -19,7 +19,7 @@
 	var('dir') = action_param('dir');
 	var('files') = file_listdirectory($dir);
 
-	'<ul class="jqueryFileTree" style="display: none;">';
+	'<ul class="jqueryFileTree hidden">';
 
 	iterate($files, local('file'));
 		#file->beginswith('.') ? loop_continue;

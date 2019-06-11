@@ -211,7 +211,7 @@
         <h:selectOneMenu value="#{itemauthor.currentItem.currentMatchPair.controllingSequence }" id="controllingSequence">
             <f:selectItems value="#{itemauthor.currentItem.selfSequenceList }" />
         </h:selectOneMenu>
-        <h:outputLabel id="noFeedbackMsg" value="#{authorMessages.feedback_unavailable}" style="#{itemauthor.currentItem.currentMatchPair.sequence != pair.sequence ? 'display: none;' : ''}" />
+        <h:outputLabel id="noFeedbackMsg" value="#{authorMessages.feedback_unavailable}" styleClass="#{itemauthor.currentItem.currentMatchPair.sequence != pair.sequence ? 'hidden' : ''}" />
         <h:panelGrid>
             <samigo:wysiwyg value="#{itemauthor.currentItem.currentMatchPair.match}"
                 rows="140" hasToggle="yes" mode="author">
