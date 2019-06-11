@@ -32,17 +32,17 @@
     <div class="connection-manager-connection-buttons">
         <button id="connection-manager-remove-button-{{uuid}}" class="connection-manager-remove-button"
                 data-user-id="{{uuid}}" data-display-name="{{displayName}}"
-                {{#unless connected}}style="display: none;"{{/unless}}>
+                {{#unless connected}}class="hidden"{{/unless}}>
             {{tr 'connection-manager' 'connection_manager_remove'}}
         </button>
 
         <button id="connection-manager-cancel-button-{{uuid}}" class="connection-manager-cancel-button"
                 data-user-id="{{uuid}}" data-display-name="{{displayName}}"
-                {{#unless outgoing}}style="display: none;"{{/unless}}>
+                {{#unless outgoing}}class="hidden"{{/unless}}>
             {{tr 'connection-manager' 'connection_manager_cancel'}}
         </button>
 
-        <div id="connection-manager-incoming-block-{{uuid}}" class="connection-manager-incoming-block" {{#unless incoming}}style="display: none;"{{/unless}}>
+        <div id="connection-manager-incoming-block-{{uuid}}" class="connection-manager-incoming-block" {{#unless incoming}}class="hidden"{{/unless}}>
             <button id="connection-manager-accept-button-{{uuid}}" class="connection-manager-accept-button"
                 data-user-id="{{uuid}}" data-display-name="{{displayName}}">
                 {{tr 'connection-manager' 'connection_manager_accept'}}

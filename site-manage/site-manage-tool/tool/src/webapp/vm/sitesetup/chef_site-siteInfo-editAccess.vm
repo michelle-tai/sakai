@@ -404,7 +404,7 @@
 			<div class="instruction" id="editShoppingInstructions" name="editShoppingInstructions">
 				$tlang.getString("shopping.instructions")
 			</div>
-			<div class="instruction" id="viewShoppingInstructions" name="viewShoppingInstructions" style="display: none">
+			<div class="instruction hidden" id="viewShoppingInstructions" name="viewShoppingInstructions">
 				$tlang.getString("shopping.instructions.view")
 			</div>
 			<div class="indnt1">

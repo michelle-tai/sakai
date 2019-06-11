@@ -52,7 +52,7 @@
 								'<i class="fip-icon-down-dir"></i>' +
 							'</span>' +
 						 '</div>' +
-						 '<div class="selector-popup" style="display: none;">' + ((this.settings.hasSearch) ?
+						 '<div class="selector-popup hidden">' + ((this.settings.hasSearch) ?
 							 '<div class="selector-search">' +
 								 '<input type="text" name="" value="" placeholder="' + this.settings.placeHolder + '" class="icons-search-input"/>' +
 								 '<i class="fip-icon-search"></i>' +

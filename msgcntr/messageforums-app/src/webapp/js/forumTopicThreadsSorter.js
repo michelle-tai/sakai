@@ -52,7 +52,7 @@ $.fn.toEm = function(settings){
 		}, settings);
 		
 		var that = parseInt(this[0],10);
-		var scopeTest = jQuery('<div style="display: none; font-size: 1em; margin: 0; padding:0; height: auto; line-height: 1; border:0;">&nbsp;</div>').appendTo(settings.scope);
+		var scopeTest = jQuery('<div class="hidden" style="font-size: 1em; margin: 0; padding:0; height: auto; line-height: 1; border:0;">&nbsp;</div>').appendTo(settings.scope);
 		var scopeVal = scopeTest.height();
 		scopeTest.remove();
 		

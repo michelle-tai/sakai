@@ -34,7 +34,7 @@
     <div id="commons-comments-{{id}}" class="commons-comments">
         <div id="commons-comments-container-{{id}}">
         <div class="commons-comment-expander"><a href="javascript:;" id="commons-show-comments-link-{{id}}">{{tr 'commons' 'show_comments'}}</a></div>
-        <div class="commons-comment-expander"><a href="javascript:;" id="commons-hide-comments-link-{{id}}" style="display: none;">{{tr 'commons' 'hide_comments'}}</a></div>
+        <div class="commons-comment-expander"><a href="javascript:;" id="commons-hide-comments-link-{{id}}" class="hidden">{{tr 'commons' 'hide_comments'}}</a></div>
         {{#each comments}}
             {{> wrapped_comment}}
         {{/each}}
