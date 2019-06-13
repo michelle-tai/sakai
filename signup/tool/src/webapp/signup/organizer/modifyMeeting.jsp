@@ -168,7 +168,7 @@
 							<h:selectOneMenu id="selectedLocation" value="#{EditMeetingSignupMBean.selectedLocation}">
 								<f:selectItems value="#{EditMeetingSignupMBean.allLocations}"/>
 							</h:selectOneMenu>
-							<h:inputText id="customLocation" size="35" value="#{EditMeetingSignupMBean.customLocation}" style="display:none" styleClass="editText">  
+							<h:inputText id="customLocation" size="35" value="#{EditMeetingSignupMBean.customLocation}" styleClass="editText hidden">
 								<f:validator validatorId="Signup.EmptyStringValidator"/>
 								<f:validateLength maximum="255" />
 							</h:inputText>
