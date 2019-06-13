@@ -720,9 +720,9 @@
                                                     <span rsf:id="select-checklistitem-name"></span>
                                                 </label>
                                                 <span class="tooltip-content" rsf:id="select-checklistitem-linked-details" ></span>
-                                                <span class="saveChecklistSuccess checklistSaveMessage hidden";>Save successful!</span>
-                                                <span class="saveChecklistError checklistSaveMessage hidden";>Unable to save checklist item</span>
-                                                <span class="saveChecklistSaving checklistSaveMessage hidden";><img src="../images/loading.gif" alt="Saving checklist..."/></span>
+                                                <span class="saveChecklistSuccess checklistSaveMessage hidden">Save successful!</span>
+                                                <span class="saveChecklistError checklistSaveMessage hidden">Unable to save checklist item</span>
+                                                <span class="saveChecklistSaving checklistSaveMessage hidden"><img src="../images/loading.gif" alt="Saving checklist..."/></span>
                                             </div>
                                         </div>
                                         <input type="hidden" rsf:id="checklistId" id="checklistId" class="checklistId"/>
@@ -899,7 +899,7 @@
                                 
                                 <div rsf:id="questionStatusText" class="questionStatusText"></div>
                                 
-                                <div class="hidden" rsf:id="questionPollData:" class="questionPollData">
+                                <div rsf:id="questionPollData:" class="hidden questionPollData">
                                     <span rsf:id="questionPollText" class="questionPollText"></span>
                                     <span rsf:id="questionPollLegend" class="questionPollLegend"></span>
                                     <span rsf:id="questionPollNumber" class="questionPollNumber"></span>
@@ -2136,7 +2136,7 @@
                                             <input type="checkbox" name="question-multiplechoice-answer-correct" rsf:id="question-multiplechoice-answer-correct"  class="question-multiplechoice-answer-correct" />
                                             <label for="question-multiplechoice-answer"><span rsf:id="msg=simplepage.question-possible-answer" class="offscreen"></span></label>
                                             <input type="text" rsf:id="question-multiplechoice-answer" name="question-multiplechoice-answer" class="question-multiplechoice-answer" />
-                                            <a role="button" href="#" onclick="deleteAnswer($(this)); return false;" class="hidden" class="deleteAnswerLink"><img src="$context/images/delete.png" rsf:id="question-mc-del"></img></a>
+                                            <a role="button" href="#" onclick="deleteAnswer($(this)); return false;" class="hidden deleteAnswerLink"><img src="$context/images/delete.png" rsf:id="question-mc-del"></img></a>
                                         </div>
                                         <div id="extraMultipleChoiceAnswers"></div>
                                     </div>
