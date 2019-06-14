@@ -58,12 +58,17 @@ function doShowPage(clickedLink) {
 		$("#call-results").load(theHref, function() {
 			var status = $("#call-results").find("#value").text();
 			if (status == "pass") {
-				$(clickedLink).closest(".item_control_box").find(".item_control.show_link").hide();
-				$(clickedLink).closest(".item_control_box").find(".item_control.enable_link").hide();
-				$(clickedLink).closest(".item_control_box").find(".item_control.disable_link").show();
-				$(clickedLink).closest(".item_control_box").find(".item_control.hide_link").show();
-				$(clickedLink).closest(".sortable_item").find(".item-hidden-flag").hide();
-				$(clickedLink).closest(".sortable_item").find(".item-locked-flag").hide();
+				// $(clickedLink).closest(".item_control_box").find(".item_control.show_link").hide();
+				// $(clickedLink).closest(".item_control_box").find(".item_control.enable_link").hide();
+				// $(clickedLink).closest(".item_control_box").find(".item_control.disable_link").show();
+				// $(clickedLink).closest(".item_control_box").find(".item_control.hide_link").show();
+				// $(clickedLink).closest(".sortable_item").find(".item-hidden-flag").hide();
+				// $(clickedLink).closest(".sortable_item").find(".item-locked-flag").hide();
+				$(clickedLink).closest(".item_control_box").find(".item_control.show_link").classList.add("hidden");
+				$(clickedLink).closest(".item_control_box").find(".item_control.enable_link").classList.add("hidden");
+				$(clickedLink).closest(".item_control_box").find(".item_control.disable_link").classList.remove("hidden");
+				$(clickedLink).closest(".item_control_box").find(".item_control.hide_link").classList.remove("hidden");
+				$(clickedLink).closest(".sortable_item").find(".item-hidden-flag").classList.add("hidden");
 				$("#call-results").fadeIn('400');
 			}
 			else if (status == "fail") {
