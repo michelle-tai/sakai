@@ -372,12 +372,12 @@
 
           var groupIds = Object.keys(m.groups);
           m.hasGroups = groupIds.length > 0;
-          var groups = groupIds.reduce((obj, id) => { obj[id] = m.groups[id]; return obj; }, {});
-          m.groups = groups;
           m.singleGroup = null;
           if (groupIds.length === 1) {
             var singleGroupId = groupIds[0];
             m.singleGroup = { id: singleGroupId, title: m.groups[singleGroupId] };
+          } else {
+            m.groups = groupIds.reduce((acc, id) => { acc.push({id: id, title: m.groups[id]}); return acc; }, []);
           }
 
           if (roster.showVisits) {
@@ -510,8 +510,11 @@
 
     field.autocomplete({
       source: roster.searchIndexValues,
-      select: function (event, ui) {
-        roster.search(ui.item.value);
+      select: function (e, ui) {
+
+        if (e.originalEvent && e.originalEvent.originalEvent && e.originalEvent.originalEvent.type === "click") {
+          roster.search(ui.item.value);
+        }
       }
     });
   };

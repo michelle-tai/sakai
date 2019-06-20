@@ -127,6 +127,7 @@
                                                 <a id="toolSite${toolCount}${siteCount}-options-link" href="javascript:;" class="siteimport-options-link hidden" data-options-id="${toolCount}-${siteCount}-options" title="$tlang.getString('import.options.title')">
                                                     <span title="$tlang.getString('import.options.title')">$tlang.getString('import.options.title').toLowerCase()</span>
                                                 </a>
+<<<<<<< HEAD
                                                 <div id="${toolCount}-${siteCount}-options" class="siteimport-options hidden">
 													#foreach ($option in $importOptions.get(${toolId}).get())
 													<div>
@@ -136,6 +137,19 @@
 															$tlang.getString(${optionPropKey})
 														</label>
 													</div>
+=======
+                                                <div id="${toolCount}-${siteCount}-options" class="siteimport-options" style="display: none;">
+                                                    #foreach ($option in $importOptions.get(${toolId}).get())
+                                                    #set ($optionPropKey = "import.options." + ${option})
+                                                    #set ($optionPropHelpKey = $optionPropKey + ".help")
+                                                    <div>
+                                                        <label>
+                                                            <input type="checkbox" class="siteimport-option" name="import-option-${option}-tool-${toolId}" value="true"/>
+                                                            $tlang.getString(${optionPropKey})
+                                                        </label>
+                                                        <span class="import-option-help fa fa-question-circle" data-toggle="popover" data-content="$tlang.getString(${optionPropHelpKey})"/>
+                                                    </div>
+>>>>>>> de04e053852b41e457d39875caf58a3c2791535f
 													#end
                                                 </div>
                                                 #end
