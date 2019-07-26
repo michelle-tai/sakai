@@ -1,5 +1,6 @@
 import {SakaiElement} from "./sakai-element.js";
 import {html} from "./assets/lit-element/lit-element.js";
+import  "./sakai-btn";
 import {repeat} from "./assets/lit-html/directives/repeat.js";
 
 class SakaiToolPermissions extends SakaiElement {
@@ -71,7 +72,7 @@ class SakaiToolPermissions extends SakaiElement {
           `)}
         </table>
         <div class="act">
-          <input type="button" class="active" value="${this.i18n["save"]}" aria-label="${this.i18n["save"]}" @click=${this.savePermissions}/>
+          <sakai-btn btn-Name="Save" btnType="primary">hi<sakai-btn/>
           <input type="button" value="${this.i18n["cancel"]}" aria-label="${this.i18n["save"]}" @click=${this.resetPermissions}/>
           <span id="${this.tool}-failure-message" class="permissions-save-message" style="display: none;">${this.i18n["save_failure"]}</span>
         </div>
